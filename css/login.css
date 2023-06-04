@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+form {
+    width: 50%;
+    margin-top: 6%;
+    margin-left: 20%;
+    text-align: center;
+    background-color: rgb(155, 155, 155);
+    padding: 5%;
+    border-radius: 5%;
+}
+
+input {
+    padding: 3%;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    border-color: blueviolet;
+    font-size: 0.9em;
+}
+
+button {
+    border-radius: 10px;
+    border-color: blueviolet;
+    padding: 3%;
+    width: 90%;
+    margin-bottom: 2%;
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: rgb(155, 155, 155);
+    color: #fff;
+}
+
+button:visited {
+    color: green;
+}

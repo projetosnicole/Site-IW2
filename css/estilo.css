@@ -1,0 +1,231 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #CCB4FF;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(225, 188, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fixo {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.itens_menu{
+    text-align: center;
+}
+
+.itens_menu li{
+    font-size: 1.3em;
+    margin-bottom: 1%;
+}
+
+.itens_menu a:visited, .itens_menu a:link{
+    color: #FFFF;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+}
+
+.itens_menu a:hover{
+    background-color: #a5dcfa4d;
+    padding: 1%;
+}
+
+ul li{
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #0B4FFF;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+    margin-right: 1%;
+}
+
+.product_img {
+    width: 22%;
+    margin-left: 2%;
+}
+
+.img_cont {
+    width: 100%;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 0px 0px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+
+.img_cont:hover {
+    box-shadow: 0px 5px 10px #444444;
+-webkit-transition:  box-shadow .3s ease-in;
+    cursor: pointer;
+}
+
+.container p {
+    position: relative;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer {
+    margin-top: 40%;
+    height: 8em;
+    text-align: center;
+    background-color: rgb(225, 188, 255);
+}
+
+footer p {
+    font-size: 1em;
+    padding-top: 4.5%;
+}
+
+@media screen and (min-width: 601px) {
+
+    header {
+        background-color: rgb(225, 188, 255);
+        flex-direction: row;
+        padding: 0.2%;
+    }    
+
+    .itens_menu {
+        position: absolute;
+        right: 5%;
+        width: 75%;
+    }
+
+    .itens_menu ul {
+        display: inline;    
+    }
+
+    .itens_menu li {
+        display: inline;
+        font-size: 1.4em;
+        padding: 5%;
+    }
+
+    .itens_menu a:visited, .itens_menu a:link{
+        color: #000;
+        text-decoration: none;
+        font-weight: bolder;
+        text-shadow: 2px 2px #fff;
+        text-align: center;
+        padding: 1%;
+    }
+    
+    .itens_menu a:hover{
+        padding: 1%;
+        background-color: rgb(187, 223, 240);
+    }    
+
+    .img_logo {
+        width: 80%;
+    }
+
+    .logo {
+        width: 10%;
+        text-align: left;
+        margin-left: 4%;
+    }
+
+    .col-100 {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-bottom: 5%;
+    }
+    
+    .slider-principal {
+        margin-top: 2%;
+        height: 70vh;
+    }
+    
+    button.slick-prev {
+        font-size: 0px;
+        border: none;
+        width: 25px;
+        height: 51px;
+        background-color: transparent;
+        background-image: url(../img/anterior.png);
+        position: absolute;
+        z-index: 9;
+        top: 50%;
+        left: 10%;
+        cursor: pointer;
+    }
+    
+    button.slick-next {
+        font-size: 0px;
+        border: none;
+        width: 25px;
+        height: 51px;
+        background-color: transparent;
+        background-image: url(../img/proximo.png);
+        position: absolute;
+        z-index: 9;
+        top: 50%;
+        right: 10%;
+        cursor: pointer;
+    }
+    
+    .slick-list {
+        width: 100%!important;
+    }
+    
+    .slick-initialized {
+        overflow: hidden;
+    }
+    
+    .slick-dots li button {
+        font-size: 0px;
+        border: 5px solid #ffffff;
+        width: 26px;
+        height: 26px;
+        background: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .slick-dots {
+        margin: 0 auto;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 600px;
+    }
+    
+    li.slick-active button {
+        background: #ffffff;
+    }
+    
+    .slick-dots li {
+        padding-left: 10px;
+        display: inline-block;
+    }
+
+}
