@@ -6,14 +6,14 @@ function logar(){
     let dados = [
                     { "id": Date.now(),"nome": "nicole","senha": 12345 }, //0
                     { "id": Date.now(),"nome": "sara","senha": 2222 }, //1
-                    { "id": Date.now(),"nome": "jose","senha": 3333 } //2
+                    { "id": Date.now(),"nome": "harley","senha": 3333 } //2
                 ]
                  
     for(let i=0;dados.length > i;i++){
     if(nome == dados[i].nome && senha == dados[i].senha){
         alert("Está logado!")
         setTimeout(function() {
-            window.location.href = "inicio.html";
+            window.location.href = "form.html";
         });
         break
     }
